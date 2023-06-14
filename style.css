@@ -1,7 +1,7 @@
 * {
 margin: 0;
 padding: 0;
-
+box-sizing: border-box;
 
 }
 
@@ -116,6 +116,7 @@ a {
 
 .greeting {
   text-align: center;
+  color: aliceblue;
 }
 
 h1 {
@@ -329,7 +330,6 @@ iframe {
   flex-direction: column;
   background-image: url(fondo1.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
 }
 
