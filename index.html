@@ -1,7 +1,6 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
     <html>
     <head>
-
         <title>Mi primera pagina web</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" href="egg.png">
@@ -12,29 +11,27 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-        <meta charset="utf8" />
+        <meta charset="utf8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
     </head>
     <body class="padre">
+        <header>
+          <div class="container-nav">
+            <nav class="navbar" role="navigation">
+              <a href="index.html" class="brand">DevelopArg</a>
+              <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <button class="button-menu-toggle">Menu</button>
+          </div>
+        </header>
 
-      <header>
-
-        <div class="container-nav">
-          <nav class="navbar" role="navigation">
-            <a href="index.html" class="brand">DevelopArg</a>
-            <ul class="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <button class="button-menu-toggle">Menu</button>
-        </div>
-
-      </header>
 
         <main>
 
@@ -71,11 +68,12 @@
           </div>
                
         </main>
-  
-        <footer>
-          <p>copyrigth-Todos los derechos reservados</p>
-        </footer>
-  
+
+          
+
+          <footer>
+            <p class="copy">copyrigth-Todos los derechos reservados</p>
+          </footer>
         
         <script src="script.js"></script>
 
