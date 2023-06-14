@@ -328,7 +328,7 @@ iframe {
 .padre {
   display: flex;
   flex-direction: column;
-  background-image: url(fondo1.png);
+  background-image: url(hola.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -570,7 +570,7 @@ iframe {
   .padre {
     display: flex;
     flex-direction: column;
-    background-image: url(fondo1.png);
+    background-image: url(hola.webp);
     background-repeat: no-repeat;
     background-size: cover;
   }
