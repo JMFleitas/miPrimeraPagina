@@ -1,4 +1,6 @@
-
+html{
+  min-height: 100%;
+}
 .padre {
   display: flex;
   flex-direction: column;
@@ -8,11 +10,6 @@
   margin: 0;
   padding: 0;
 }
-
-
-
-
-
 
 
 /*barra de navegación*/
