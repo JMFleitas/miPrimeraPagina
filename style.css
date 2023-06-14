@@ -10,7 +10,7 @@ box-sizing: border-box;
 .padre {
   display: flex;
   flex-direction: column;
-  background-image: url(fondo1.png);
+  background-image: url(hola.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -513,10 +513,245 @@ iframe {
 
   }
  
+  @media (max-width: 568px) {
 
-  @media (max-width: 600px) {
-    .column {
-      flex: 100%;
+    /*barra de nav*/
+  
+      .nav-links {
+        display: none;
+      }
+    
+    
+      .button-menu-toggle {
+        display: block;
+        background-color: white;
+        border:none;
+        width: 120px;
+        border-radius: 40px;
+        padding: 0 14px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 16px;
+      }
+     
+      .nav-links.nav-links-responsive {
+        position: absolute;
+        display: flex;
+        background-color: rgba(20,20,20,0.95);
+        width: 100%;
+        height: 100%;
+        top: 74px;
+        left: 0;
+        flex-direction: column;
+        padding-top: 45px;
+        align-items: center;
+        gap:70px;
+        font-size: 40px;
+    
+    
+      }
+    ul {
+      padding: 0;
     }
+  
+    .img0 {
+      height: 150;
+      width: 250;
+    }
+    
+    .imgConteiner img {
+        height: 150px;
+        width: 350px;
+        border-radius: 25px;
+        border: 2px solid black;
+    }
+  
+    
+  .padre {
+    display: flex;
+    flex-direction: column;
+    background-image: url(fondo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+  
+    .container{
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      margin: 10px 20px;
+      gap: 15px;
+    
+    }
+    
+    .greeting {
+      text-align: center;
+    }
+    
+    h1 {
+        color: aliceblue;
+        padding: 5px 7px;
+        margin: 10px;
+        text-align: center;
+        text-shadow: 3px 1px 0 black;
+        font-size: 16px;
+    }
+    .container p {
+         font-family: 'Caveat';
+        font-size: 18px;
+        padding: 20px;
+        margin: 20px;
+        color: white;
+        text-shadow: 1px 1px black;
+  
+    }
+    
+    
+    h2 {
+      font-family: monospace;
+      text-decoration-line: underline;
+      display: inline;
+       background-color: rgb(137, 219, 244);
+       padding: 10px;
+       text-align: center;
+       border-radius: 25px;
+    }
+    
+    .img0 {
+      height: 100;
+      width: 150;
+    }
+    
+    
+    /*video home*/
+    .videos{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    
+    }
+    
+    iframe {
+      align-self: center;
+      border: 2px solid black;
+      box-shadow: 2px 2px 2px black;
+    }
+    /*fotos about*/
+    
+    .imgConteiner img {
+        height: 125px;
+        width: 175px;
+        border-radius: 15px;
+        border: 2px solid black;
+        transition: all 0.7s;
+        object-fit: cover;
+        }
+    
+    .imgConteiner {
+      display:flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      padding: 50px;
+      gap: 10px;
+    }
+    
+    .imgConteiner img:hover {
+      transform: scale(1.2);
+    }
+  
+  
+    /*formulario*/
+  
+    .conteinerform {
+      background-image: url(footer.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 450px;
+      height: 500px;
+      border-radius: 25%;
+      border: 5px solid black;
+      margin: 50px auto;
+      box-shadow: 6px 6px 5px black;
+      display:flex;
+      flex-flow:column wrap ;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  
+  /*formularios*/
+    
+    .formulario {
+      display: block;
+      width: 100px; /* ajusta el ancho según tus necesidades */
+      margin: 35px auto; /* centra el formulario horizontalmente */
+    }
+    
+    .formulario label {
+      display: block;
+      margin-bottom: 15px; /* espacio entre etiquetas */
+      font-size: 15px;
+      font-family: sans-serif ;
+      color: white;
+      
+    }
+    .formulario input[type="text"],
+    .formulario textarea[type="text"],
+    .formulario input[type="email"],
+    .formulario button[type="submit"] {
+      display: block;
+      width: 100%; /* ocupa todo el ancho disponible */
+      margin-bottom: 15px; /* espacio entre campos */
+      border: 2px solid black;
+    
+    }
+     textarea:hover{
+      transition: all 5s;
+      height: 95px;
+      width: 150px;
+     background-color: rgb(137, 172, 233);
+     font-family: cursive;
+    }
+    .formulario input[type="text"],
+    .formulario input[type="email"],
+    .formulario select
+     {
+      height: 16px;
+    }
+    
+    .formulario button {
+      margin-top: 15px;
+      height: 30px;
+      border-radius: 30%;
+    }
+    
+    .input-style::placeholder {
+      color: #000000; /* Color del texto del marcador de posición */
+      font-style: oblique; /* Estilo del texto del marcador de posición */
+      /* Otros estilos que desees aplicar al texto del marcador de posición */
+      text-align: center;
+    
+    }
+  
+    footer {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      background-color: cadetblue;
+      background-image: url(JavaScript-reserved-words.png) ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.87;
+    }
+    
+    footer p {
+      font-size: 10px;
+      line-height: 100px;
+      color: white;
+      text-shadow:1px 1px rgb(3, 3, 3);
+      
+    }
+    
+  
+    }
 
