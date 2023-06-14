@@ -266,7 +266,7 @@ footer p {
 
 @media (max-width: 768px) {
   section {
-    flex: 100%;
+    flex: auto;
   }
 
 
@@ -302,6 +302,131 @@ footer p {
 
 
   }
+
+  .imgConteiner img {
+    height: 175px;
+    width: 225px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: all 0.7s;
+    object-fit: cover;
+    }
+
+.imgConteiner {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 50px;
+  gap: 10px;
+}
+
+/*video home*/
+.videos{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+iframe {
+  align-self: center;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px black;
+  flex:100%;
+}
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: cadetblue;
+  background-image: url(JavaScript-reserved-words.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.87;
+}
+
+footer p {
+  font-size: 10px;
+  line-height: 50px;
+  color: white;
+  text-shadow:1px 1px rgb(3, 3, 3);
+  
+}
+
+/*formulario contact*/
+
+.conteinerform {
+  background-image: url(footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 350px;
+  border-radius: 25%;
+  border: 5px solid black;
+  margin: 25px auto;
+  box-shadow: 2px 2px 2px black;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.formulario {
+  display: block;
+  width: 160px; /* ajusta el ancho según tus necesidades */
+  margin: 33px auto; /* centra el formulario horizontalmente */
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 7px; /* espacio entre etiquetas */
+  font-size: 16px;
+  font-family: sans-serif ;
+  color: white;
+  
+}
+.formulario input[type="text"],
+.formulario textarea[type="text"],
+.formulario input[type="email"],
+.formulario button[type="submit"] {
+  display: block;
+  width: 100%; /* ocupa todo el ancho disponible */
+  margin-bottom: 15px; /* espacio entre campos */
+  border: 2px solid black;
+
+}
+ textarea:hover{
+  transition: all 5s;
+  height: 100px;
+  width: 100px;
+ background-color: rgb(201, 180, 226);
+ font-family: cursive;
+}
+.formulario input[type="text"],
+.formulario input[type="email"]{
+  height: 20px;
+}
+.formulario select
+ {
+  height: 25px;
+}
+
+.formulario button {
+  margin-top: 25px;
+  height: 20px;
+  border-radius: 30%;
+}
+
+.input-style::placeholder {
+  color: #000000; /* Color del texto del marcador de posición */
+  font-style: oblique; /* Estilo del texto del marcador de posición */
+  /* Otros estilos que desees aplicar al texto del marcador de posición */
+  text-align: center;
+
+}
+
 }
 
 
