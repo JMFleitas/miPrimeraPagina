@@ -1,8 +1,7 @@
 * {
 margin: 0;
 padding: 0;
-
-
+box-sizing: border-box;
 }
 
 
@@ -130,18 +129,22 @@ h2 {
 }
 
 
-/*video home*/
 .videos{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  position: relative;
+   padding-bottom: 56.25%;
+    height: 0;
+     overflow: hidden;
 
 }
 
 iframe {
-  align-self: center;
+
   border: 2px solid black;
   box-shadow: 2px 2px 2px black;
+  position: absolute;
+   top: 0; 
+   left: 25%;
+    width: 50%; height: 50%;
 }
 
 
@@ -323,18 +326,24 @@ footer p {
 
 /*video home*/
 .videos{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  position: relative;
+   padding-bottom: 56.25%;
+    height: 0;
+   overflow: hidden;
+
 
 }
 
 iframe {
-  align-self: center;
+
   border: 2px solid black;
   box-shadow: 2px 2px 2px black;
-  flex:100%;
+  position: absolute;
+   top: 0; 
+   left:0;
+    width: 100%; height: 100%;
 }
+/*footer*/
 footer {
   height: 100px;
   display: flex;
