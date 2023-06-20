@@ -1,4 +1,4 @@
-html{
+html {
   min-height: 100%;
 }
 .padre {
@@ -9,6 +9,7 @@ html{
   background-size: cover;
   margin: 0;
   padding: 0;
+
 }
 
 
@@ -140,7 +141,7 @@ iframe {
 }
 
 
-footer {
+/*footer {
   height: 200px;
   display: flex;
   justify-content: center;
@@ -149,7 +150,50 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.87;
+}*/
+/* Estilos para el footer */
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  color: #555;
+  background-image: url(JavaScript-reserved-words.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+/* Estilos para los videos */
+section.videos {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+section.videos iframe {
+  width: 560px;
+  height: 315px;
+}
+
+/* Estilos para las fotos */
+section.photos {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+section.photos img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Estilos para la fuente */
+body {
+  font-family: 'Tilt Prism', sans-serif;
+}
+
 
 footer p {
   font-size: 30px;
